@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+%:
+	dh ${@} --parallel
+
+override_dh_auto_configure:
+	dh_auto_configure -- --disable-silent-rules
+
+override_dh_auto_install:
+	dh_auto_install -- DESTDIR=$(CURDIR)/debian/lxappearance-obconf
+
+	# removing unused files
+	rm -f debian/lxappearance-obconf/usr/lib/*/lxappearance/plugins/*.a
+	rm -f debian/lxappearance-obconf/usr/lib/*/lxappearance/plugins/*.la
+
+override_dh_strip:
+	dh_strip --dbg-package=lxappearance-obconf-dbg

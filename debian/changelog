@@ -1,0 +1,85 @@
+lxappearance-obconf (0.2.3-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:47:13 +0800
+
+lxappearance-obconf (0.2.3-1) unstable; urgency=medium
+
+  * Merging upstream version 0.2.3.
+  * Bump Standards-Version to 3.9.7.
+
+ -- Andriy Grytsenko <andrej@rep.kiev.ua>  Sun, 21 Feb 2016 14:47:35 +0200
+
+lxappearance-obconf (0.2.2-3) unstable; urgency=low
+
+  * Disabling build with openbox 3.6.0-1 which is broken (Closes: #788524).
+
+ -- Andriy Grytsenko <andrej@rep.kiev.ua>  Fri, 26 Jun 2015 23:09:42 +0300
+
+lxappearance-obconf (0.2.2-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.6.
+  * Changing Maintainer e-mail to Alioth based one.
+
+ -- Andriy Grytsenko <andrej@rep.kiev.ua>  Fri, 12 Jun 2015 09:28:24 +0300
+
+lxappearance-obconf (0.2.2-1) unstable; urgency=low
+
+  * Adding myself to Uploaders.
+  * Removing override_dh_auto_test target since upstream fixed the problem.
+  * Removing obsolete target override_dh_builddeb from debian/rules file.
+  * Removing also obconf.a file from package, it isn't used.
+  * Adding --disable-silent-rules to fix buildlog checker warning.
+  * Removing unneeded build dependencies.
+  * Merging upstream version 0.2.2.
+  * Enabling parallel build (pass --parallel to dh).
+
+ -- Andriy Grytsenko <andrej@rep.kiev.ua>  Tue, 16 Sep 2014 15:14:37 +0300
+
+lxappearance-obconf (0.2.1-1) unstable; urgency=low
+
+  [ Andriy Grytsenko ]
+  * Removing libmenu-cache1-dev from Build-Depends (Closes: #722112)
+  * Removing Daniel Baumann from uploaders (Closes: #704336).
+  * Merging upstream version 0.2.1 (Closes: #722112).
+
+  [ Mateusz Łukasik ]
+  * bump standards version
+  * fix depends lxappearance-obconf-dbg
+
+  [ Andriy Grytsenko ]
+  * Adding 'Enhances: lxappearance' into control file.
+  * Bump Standards-Version to 3.9.5.
+  * Updating watch file to support XZ tarball format and non-numeric 
+    versions.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Thu, 26 Dec 2013 03:01:34 +0800
+
+lxappearance-obconf (0.2.0-4) unstable; urgency=low
+
+  * Removing alternative build-depends on lxappearance-dev now that
+    'new' lxappearance is in the archive (Closes: #674103, #674105).
+
+ -- Daniel Baumann <daniel@debian.org>  Wed, 06 Jun 2012 18:05:57 +0200
+
+lxappearance-obconf (0.2.0-3) unstable; urgency=low
+
+  * Adding debug package.
+  * Adding alternative build-depends to lxappearance for upcoming
+    lxappearance-dev drop.
+
+ -- Daniel Baumann <daniel@debian.org>  Fri, 18 May 2012 20:01:04 +0200
+
+lxappearance-obconf (0.2.0-2) unstable; urgency=low
+
+  * Adding missing build-depends to libimlib2-dev and openbox-dev
+    (Closes: #671520, #672097).
+
+ -- Daniel Baumann <daniel@debian.org>  Thu, 10 May 2012 08:33:58 +0200
+
+lxappearance-obconf (0.2.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 16 Apr 2012 21:39:22 +0000
